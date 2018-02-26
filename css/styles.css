@@ -1,0 +1,25 @@
+.grid-container {
+  display: grid
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.project1 {
+  grid-area: 1 / 2 / span 1 / span 1;
+  background-color: red;
+}
+
+.project2 {
+  grid-area: 1 / 3 / span 1 / span 1;
+  background-color: blue;
+}
+
+.project3 {
+  grid-area: 2 / 2 / span 1 / span 1;
+  background-color: green;
+}
+
+.project4 {
+  grid-area: 2 / 3 / span 1 / span 1;
+  background-color: yellow;
+}
