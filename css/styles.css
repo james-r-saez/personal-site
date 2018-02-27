@@ -1,39 +1,66 @@
+:root {
+  --grid-unit-size: 70vw;
+  --grid-border-radius: 1em;
+}
+
 .grid-container {
-  display: grid
-  grid-template-columns: 1fr 4fr 4fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  padding: 2em;
+  text-align: center;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "project1 project2"
+  "project4 project3";
+}
+
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    padding: 1em;
+    text-align: center;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    --grid-unit-size: 90vw;
+    grid-template-areas:
+    "project1"
+    "project2"
+    "project3"
+    "project4";
+  }
 }
 
 .project1 {
-  grid-area: 1 / 2 / span 1 / span 1;
-  background-color: red;
-  width: 50vw;
-  height: 50vw;
+  grid-area: project1;
+  background-color: #ff6666;
+  max-width: var(--grid-unit-size);
+  border-radius: var(--grid-border-radius);
 }
 
 .project2 {
-  grid-area: 1 / 3 / span 1 / span 1;
-  background-color: blue;
-  width: 50vw;
-  height: 50vw;
+  grid-area: project2;
+  background-color: #4d79ff;
+  max-width: var(--grid-unit-size);
+  border-radius: var(--grid-border-radius);
 }
 
 .project3 {
-  grid-area: 2 / 2 / span 1 / span 1;
-  background-color: green;
-  width: 50vw;
-  height: 50vw;
+  background-color: #33ff33;
+  grid-area: project3;
+  max-width: var(--grid-unit-size);
+  border-radius: var(--grid-border-radius);
 }
 
 .project4 {
-  grid-area: 2 / 3 / span 1 / span 1;
-  background-color: yellow;
-  width: 50vw;
-  height: 50vw;
+  grid-area: project4;
+  background-color: #ffff66;
+  max-width: var(--grid-unit-size);
+  border-radius: var(--grid-border-radius);
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+img {
+  max-width: 40vw;
+  margin-bottom: 1em;
 }
