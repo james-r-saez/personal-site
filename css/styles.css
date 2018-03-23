@@ -70,3 +70,7 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
+
+.about {
+  margin: 4em;
+}
