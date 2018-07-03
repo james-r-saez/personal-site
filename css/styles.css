@@ -74,9 +74,11 @@ a {
   font-size: 1.3em;
   text-decoration: none;
   font-weight: bold;
-  color: darkgray;
+  color: black;
 }
 
-.about {
-  margin: 4em;
+.aboutme {
+  margin-left: 5em;
+  margin-right: 5em;
+  font-size: 1.6em;
 }
