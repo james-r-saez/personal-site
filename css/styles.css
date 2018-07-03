@@ -3,6 +3,11 @@
   --grid-border-radius: 1em;
 }
 
+body {
+  background-image: url(https://img.freepik.com/free-photo/smooth-stucco-wall_1194-7087.jpg?size=338&ext=jpg);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .grid-container {
   padding: 2em;
   text-align: center;
@@ -69,6 +74,7 @@ a {
   font-size: 1.3em;
   text-decoration: none;
   font-weight: bold;
+  color: darkgray;
 }
 
 .about {
